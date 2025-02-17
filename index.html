@@ -271,7 +271,7 @@ document.getElementById("surveyForm").addEventListener("submit", async function 
     const answerList = document.getElementById('answerList');
     answerList.innerHTML = `<li><strong>${formData.name}</strong></li>`;
     if (formData.q1) answerList.innerHTML += `<li>- ${document.getElementById('q1').selectedOptions[0].text}</li>`;
-    if (formData.cond) answerList.innerHTML += `<li>- ${document.getElementById('cond').selectedOptions[0].text}</li>`;
+    if (formData.cond) answerList.innerHTML += `<li>  ${document.getElementById('cond').selectedOptions[0].text}</li>`;
     if (formData.q3) answerList.innerHTML += `<li>- ${document.getElementById('q3').selectedOptions[0].text}</li>`;
     if (formData.q4) answerList.innerHTML += `<li>- ${document.getElementById('q4').selectedOptions[0].text}</li>`;
     if (formData.notes) answerList.innerHTML += `<li><strong>NOTE:</strong> ${formData.notes}</li>`;
